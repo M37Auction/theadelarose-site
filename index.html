@@ -150,7 +150,7 @@ R.forEach((r,k)=>{const t=document.createElement('img');t.src=r[0]+'.jpg';t.oncl
 function go(k){ri=(k+R.length)%R.length;im.src=R[ri][0]+'.jpg';cp.textContent=R[ri][1]+'  ('+(ri+1)+'/'+R.length+')';[...th.children].forEach((e,j)=>e.classList.toggle('on',j==ri))}
 document.getElementById('prev').onclick=()=>go(ri-1);document.getElementById('next').onclick=()=>go(ri+1);go(0);setInterval(()=>{if(location.hash=='#reel')go(ri+1)},4500);
 const OLD=[["Belted Galloways at The Adela Rose","/home"],["Belted Galloway photo gallery","/beltedgallowayphotos"],["Thor (original page)","/thor"],["English shepherds","/englishshepherds"],["Farm photos (original)","/farm-photos"],["Relevant links","/links"]];
-document.getElementById('oldlinks').innerHTML=OLD.map(o=>'<div><a style="color:inherit" href="https://www.theadelarose.com'+o[1]+'">'+o[0]+'</a></div>').join('');
+document.getElementById('oldlinks').innerHTML=OLD.map(o=>'<div><a target="_top" style="color:inherit" href="https://www.theadelarose.com'+o[1]+'">'+o[0]+'</a></div>').join('');
 function route(){const n=(location.hash||'#home').slice(1);const map={home:'home',story:'story',thor:'thor',history:'history',reel:'reel',old:'old',why:'home',contact:'home'};const p=map[n]||'home';document.querySelectorAll('.page').forEach(e=>e.classList.toggle('on',e.id=='p-'+p));document.querySelectorAll('.tabs a').forEach(a=>a.classList.toggle('cur',a.getAttribute('href')=='#'+p));if(n=='contact'||n=='why')document.getElementById(n).scrollIntoView();else window.scrollTo(0,0)}
 addEventListener('hashchange',route);route();
 </script></body></html>
