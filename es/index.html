@@ -269,7 +269,7 @@ const OLD=[["Los Belted Galloway de The Adela Rose","/home"],["Galería de fotos
 document.getElementById('oldlinks').innerHTML=OLD.map(o=>'<div><a target="_top" style="color:inherit" href="https://sites.google.com/a/theadelarose.com/www'+o[1]+'">'+o[0]+'</a></div>').join('');
 function route(){const n=(location.hash||'#home').slice(1);const map={home:'home',story:'story',thor:'thor',history:'history',reel:'reel',old:'old',why:'home',contact:'home',since2009:'home','how-i-work':'home'};const p=map[n]||'home';document.querySelectorAll('.page').forEach(e=>e.classList.toggle('on',e.id=='p-'+p));document.querySelectorAll('.tabs a').forEach(a=>a.classList.toggle('cur',a.getAttribute('href')=='#'+p));if(n=='contact'||n=='why'||n=='since2009'||n=='how-i-work')document.getElementById(n).scrollIntoView();else window.scrollTo(0,0)}
 addEventListener('hashchange',route);route();
-</script><nav aria-label="Páginas" style="background:#0e0c0a;color:#d9d1c3;text-align:center;padding:18px 5vw;font-size:14px;letter-spacing:.5px">
+</script><nav aria-label="Páginas" style="flex-wrap:wrap;justify-content:center;gap:6px 0;background:#0e0c0a;color:#d9d1c3;text-align:center;padding:18px 5vw;font-size:14px;letter-spacing:.5px">
   <a href="/es/servicios/" style="color:#e2c488;margin:0 12px">Servicios</a>
   <a href="/es/transicion-empresarial/" style="color:#e2c488;margin:0 12px">Transición</a>
   <a href="/es/acerca/" style="color:#e2c488;margin:0 12px">Acerca de</a>
