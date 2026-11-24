@@ -48,4 +48,12 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.theadelarose.com/business-transition/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.theadelarose.com/es/transicion-empresarial/"/>
   </url>
+  <url><loc>https://www.theadelarose.com/life-transitions/</loc><lastmod>2026-11-24</lastmod><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.theadelarose.com/life-transitions/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.theadelarose.com/es/transiciones-de-vida/"/>
+  </url>
+  <url><loc>https://www.theadelarose.com/es/transiciones-de-vida/</loc><lastmod>2026-11-24</lastmod><priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.theadelarose.com/life-transitions/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.theadelarose.com/es/transiciones-de-vida/"/>
+  </url>
 </urlset>
